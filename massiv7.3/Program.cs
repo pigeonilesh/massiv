@@ -22,6 +22,35 @@ namespace massiv7._3
             int min = mas[0];
             int ras = 0;
             int sred = 0;
+            int sum = 0;
+            for (int i = 0; i < mas.Length; i++)
+            {
+                sum += mas[i];
+            }
+            for (int i = 0; i < mas.Length; i++)
+            {
+                if (mas[i] >= max)
+                {
+                    max = mas[i];
+                }
+                else if (mas[i] <= min)
+                {
+                    min = mas[i];
+                }
+            }
+            ras = max - min;
+            sred = sum / mas.Length;
+            Console.WriteLine($"Максимальный элемент массива: {max}");
+            Console.WriteLine($"Минимальный элемент массива: {min}");
+            Console.WriteLine($"Разница между максимальным и минимальным числом: {ras}");
+            Console.WriteLine($"Все элементы массива, которые больше среднего значения({sred}):");
+            for (int i = 0; i < mas.Length; i++)
+            {
+                if (mas[i] > sred)
+                {
+                    Console.Write(mas[i]+" ");
+                }
+            }
         }
     }
 }

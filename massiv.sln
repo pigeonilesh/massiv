@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "massiv7.2", "massiv7.2\mass
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "massiv7.3", "massiv7.3\massiv7.3.csproj", "{9EA77D1C-4DB6-48BF-BEC4-E784E157688B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "massiv7.4", "massiv7.4\massiv7.4.csproj", "{86DB69E2-2DA0-429E-AED6-9334A29FF1F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{9EA77D1C-4DB6-48BF-BEC4-E784E157688B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EA77D1C-4DB6-48BF-BEC4-E784E157688B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EA77D1C-4DB6-48BF-BEC4-E784E157688B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86DB69E2-2DA0-429E-AED6-9334A29FF1F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DB69E2-2DA0-429E-AED6-9334A29FF1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DB69E2-2DA0-429E-AED6-9334A29FF1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DB69E2-2DA0-429E-AED6-9334A29FF1F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
