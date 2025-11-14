@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,37 +32,55 @@ namespace massiv7._2
                 Console.Write(mas[i]+" ");
             }
             Console.WriteLine();
-            int dlin = mas[0].Length;
-            string dlins = "";
+            //int dlin = mas[0].Length;
+            //string dlins = "";
+            //for (int i = 0; i < mas.Length; i++)
+            //{
+            //    if (mas[i].Length >= dlin)
+            //    {
+            //        dlin = mas[i].Length;
+            //        dlins = mas[i];
+            //    }
+            //}
+            //Console.WriteLine($"Самая длинная строка: {dlins}, количенство элементов: {dlin}");
+            //Console.WriteLine($"Все строки которын вы ввели:");
+            //for (int i = 0; i < mas.Length; i++)
+            //{
+            //    if (mas[i] != "null")
+            //    {
+            //        Console.WriteLine(mas[i]);
+            //    }
+            //}
+            //int si = 0;
+            //Console.WriteLine($"Введите слово которое хотите найти:");
+            //string slova = Console.ReadLine();
+            //for (int i = 0; i < mas.Length; i++)
+            //{
+            //    if (mas[i] == slova)
+            //    {
+            //        si = i;
+            //        Console.WriteLine($"Индекс слова({mas[i]}) в массиве равен: {si}");
+            //        break;
+            //    }
+            //}
+            Console.WriteLine($"Введите букву которую хотите найти в словах массива:");
+            string a = Console.ReadLine();
             for (int i = 0; i < mas.Length; i++)
             {
-                if (mas[i].Length >= dlin)
+                string b = mas[i];
+                if (b != "null")
                 {
-                    dlin = mas[i].Length;
-                    dlins = mas[i];
+                    for (int j = 0; j < b.Length; j++)
+                    {
+                        string c = b[j].ToString();
+                        if (c == a)
+                        {
+                            Console.Write(mas[i] + " ");
+                            break;
+                        }
+                    }
                 }
             }
-            Console.WriteLine($"Самая длинная строка: {dlins}, количенство элементов: {dlin}");
-            Console.WriteLine($"Все строки которын вы ввели:");
-            for (int i = 0; i < mas.Length; i++)
-            {
-                if (mas[i] != "null")
-                {
-                    Console.WriteLine(mas[i]);
-                }
-            }
-            int si = 0;
-            Console.WriteLine($"Введите слово которое хотите найти:");
-            string slova = Console.ReadLine();
-            for (int i = 0;i < slova.Length; i++)
-            {
-                if (mas[i] == slova)
-                {
-                    si = i;
-                    Console.WriteLine($"Индекс вашего слова в массиве равен: {si}");
-                    break;
-                }
-            } 
         }
     }
 }
