@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "massiv7.3", "massiv7.3\mass
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "massiv7.4", "massiv7.4\massiv7.4.csproj", "{86DB69E2-2DA0-429E-AED6-9334A29FF1F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "massiv7.5", "massiv7.5\massiv7.5.csproj", "{405F27CB-25CE-4E4B-BE6D-85E045DA7C1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{86DB69E2-2DA0-429E-AED6-9334A29FF1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86DB69E2-2DA0-429E-AED6-9334A29FF1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86DB69E2-2DA0-429E-AED6-9334A29FF1F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405F27CB-25CE-4E4B-BE6D-85E045DA7C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405F27CB-25CE-4E4B-BE6D-85E045DA7C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405F27CB-25CE-4E4B-BE6D-85E045DA7C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405F27CB-25CE-4E4B-BE6D-85E045DA7C1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
