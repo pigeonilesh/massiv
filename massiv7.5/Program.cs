@@ -17,13 +17,9 @@ namespace massiv7._5
             mas[3] = new string[] {"Григорьев Григорий Григорьевич", "Менеджер рекламы"};
             mas[4] = new string[] {"Александров Александр Александрович", "Бухгалтер"};
             mas[5] = new string[] {"Гулкин Миша Иванович", "Рабочий"};
-            foreach (string[] s1 in mas)  
+            foreach (string[] s1 in mas)
             {
-                foreach (string s2 in s1)
-                {
-                    Console.WriteLine($"{s2}");
-                }
-                Console.WriteLine();
+                Console.WriteLine($"{s1[0]} - {s1[1]}");
             }
             Console.WriteLine($"Введите должность сотрудников, которых хотите найти:");
             string a = Console.ReadLine();
