@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "massiv7.6", "massiv7.6\mass
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "massiv7.7", "massiv7.7\massiv7.7.csproj", "{7EF6DDEE-4E28-41E8-AC5C-95A2BE92F8E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mas7.5", "mas7.5\mas7.5.csproj", "{571C9142-D421-4C30-95E3-B2F6D77E152B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mas7.6", "mas7.6\mas7.6.csproj", "{91AA5629-2C3C-4221-962F-CD31FCD9E575}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{7EF6DDEE-4E28-41E8-AC5C-95A2BE92F8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EF6DDEE-4E28-41E8-AC5C-95A2BE92F8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EF6DDEE-4E28-41E8-AC5C-95A2BE92F8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{571C9142-D421-4C30-95E3-B2F6D77E152B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571C9142-D421-4C30-95E3-B2F6D77E152B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571C9142-D421-4C30-95E3-B2F6D77E152B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571C9142-D421-4C30-95E3-B2F6D77E152B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91AA5629-2C3C-4221-962F-CD31FCD9E575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91AA5629-2C3C-4221-962F-CD31FCD9E575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91AA5629-2C3C-4221-962F-CD31FCD9E575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AA5629-2C3C-4221-962F-CD31FCD9E575}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
