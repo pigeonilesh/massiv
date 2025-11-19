@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mas7.6", "mas7.6\mas7.6.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mas7.7", "mas7.7\mas7.7.csproj", "{EBFE955C-22D3-4D95-913C-1411F002923B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mas7.8", "mas7.8\mas7.8.csproj", "{64A83984-F402-4D02-B192-EA3A1FC7BF20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "obisnenie", "obisnenie\obisnenie.csproj", "{853F3915-0398-4D33-9BE8-A9E51AC0FD26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{EBFE955C-22D3-4D95-913C-1411F002923B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBFE955C-22D3-4D95-913C-1411F002923B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBFE955C-22D3-4D95-913C-1411F002923B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A83984-F402-4D02-B192-EA3A1FC7BF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A83984-F402-4D02-B192-EA3A1FC7BF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A83984-F402-4D02-B192-EA3A1FC7BF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A83984-F402-4D02-B192-EA3A1FC7BF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853F3915-0398-4D33-9BE8-A9E51AC0FD26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853F3915-0398-4D33-9BE8-A9E51AC0FD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853F3915-0398-4D33-9BE8-A9E51AC0FD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853F3915-0398-4D33-9BE8-A9E51AC0FD26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
