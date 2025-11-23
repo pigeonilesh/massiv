@@ -34,12 +34,12 @@ namespace mas7._8
             {
                 Console.Write(mas[i] + " ");
             }
-            double sum = 0;
+            var sum = 0;
             for (int i = 0; i < mas.Length; i++)
             {
                 sum += mas[i];
             }
-            double sred = sum / mas.Length;
+            var sred = sum / mas.Length;
         }
     }
 }
