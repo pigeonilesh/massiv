@@ -21,6 +21,15 @@ namespace mas7._8
                 Console.Write(mas[i]+" ");
             }
             Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine($"Отсортированный список результатов:"); 
+            Array.Sort(mas);
+            for (int i = 0; i < mas.Length; i++)
+            {
+                Console.Write(mas[i] + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
             double med = 0;
             if (mas.Length % 2 == 0)
             {
@@ -29,17 +38,66 @@ namespace mas7._8
             else
                 med = mas[mas.Length / 2];
             Console.WriteLine($"Медиана: {med}");
-            Array.Sort(mas);
-            for (int i = 0; i < mas.Length; i++)
-            {
-                Console.Write(mas[i] + " ");
-            }
-            var sum = 0;
+            Console.WriteLine();
+            double sum = 0.0;
             for (int i = 0; i < mas.Length; i++)
             {
                 sum += mas[i];
             }
-            var sred = sum / mas.Length;
+            double sred = sum / mas.Length;
+            double summ = 0.0;
+            foreach (int i in mas)
+            {
+                double vch = i - sred;
+                double kv = Math.Pow(vch, 2);
+                summ += kv;
+            }
+            double sred2 = summ / mas.Length;
+            double kor = Math.Sqrt(sred2);
+            Console.WriteLine($"Среднее отклонение: {kor:F2}");
+            Console.WriteLine();
+            Console.WriteLine($"Топ-10% лучших результатов:");
+            var top10 = mas.OrderByDescending(m => m).Take(Convert.ToInt32(Math.Ceiling(mas.Length * 0.1)));
+            foreach (int i in top10)
+            {
+                Console.WriteLine($" -- {i} --");
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Сортировка результатов по группам(НеЗЧ, Неуд, Удовл, Хор, Отл)");
+            var nezch = mas.Where(m => m < 25);
+            Console.WriteLine($"Не зачет");
+            foreach (int i in nezch)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+            var neyd = mas.Where(m => m >= 25 && m < 50);
+            Console.WriteLine($"Неудовлетворительно");
+            foreach (int i in neyd)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+            var ydov = mas.Where(m => m >= 50 && m < 70);
+            Console.WriteLine($"Удовлетворительно");
+            foreach (int i in ydov)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+            var hor = mas.Where(m => m >= 70 && m < 85);
+            Console.WriteLine($"Хорошо");
+            foreach (int i in hor)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+            var otl = mas.Where(m => m >= 85);
+            Console.WriteLine($"Отлично");
+            foreach (int i in otl)
+            {
+                Console.Write(i + " ");
+            }
         }
     }
 }
