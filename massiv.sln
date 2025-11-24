@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mas7.8", "mas7.8\mas7.8.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "obisnenie", "obisnenie\obisnenie.csproj", "{853F3915-0398-4D33-9BE8-A9E51AC0FD26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mas7.9", "mas7.9\mas7.9.csproj", "{77108741-709A-4DA7-9938-8F247727A4E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{853F3915-0398-4D33-9BE8-A9E51AC0FD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{853F3915-0398-4D33-9BE8-A9E51AC0FD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{853F3915-0398-4D33-9BE8-A9E51AC0FD26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77108741-709A-4DA7-9938-8F247727A4E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77108741-709A-4DA7-9938-8F247727A4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77108741-709A-4DA7-9938-8F247727A4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77108741-709A-4DA7-9938-8F247727A4E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
