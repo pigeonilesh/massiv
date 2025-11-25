@@ -50,7 +50,14 @@ namespace obisnenie
             foreach (var a in b)
             {
                 Console.WriteLine($"  - {a.Split('-')[0]}");
-            }    
+            }
+            Console.WriteLine();
+            var nov = mas.OrderBy(m => Convert.ToInt32(m.Split('-')[2])).First();
+            Console.WriteLine($"Самая новая книга: {nov.Split('-')[0]} - {nov.Split('-')[2]} г.");
+            var star = mas.OrderByDescending(m => Convert.ToInt32(m.Split('-')[2])).First();
+            Console.WriteLine($"Самая старая книга: {star.Split('-')[0]} - {star.Split('-')[2]} г.");
+            var sred = mas.Average(m => Convert.ToDouble(m.Split('-')[3]));
+            Console.WriteLine($"Среднее значение по рейтенгу: {sred:F2}");
         }
     }
 }
