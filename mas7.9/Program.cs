@@ -28,7 +28,12 @@ namespace mas7._9
             foreach (string tab in mas)
             {
                 var part = tab.Split('-');
-                Console.WriteLine($"{part[0]}: {part[1]}, {part[2]}, {part[3]}, {part[4]}, {part[5]}");
+                Console.Write($"{part[0]}: ");
+                for (int i = 1; i < part.Length; i++)
+                {
+                    Console.Write($"{part[i]}, ");
+                }
+                Console.WriteLine();
             }
             Console.WriteLine();
             Console.WriteLine($"Введите средний балл");
@@ -78,6 +83,118 @@ namespace mas7._9
                 }
             }
             Console.WriteLine($"{bsub}: {max}");
+            Console.WriteLine();
+            string[] reit = new string[mas.Length];
+            for (int i = 0; i < reit.Length; i++)
+            {
+                var part = mas[i].Split('-');
+                string name = part[0];
+                double sum = 0;
+                for (int j = 1; j < part.Length; j++)
+                {
+                    sum += Convert.ToDouble(part[j]);
+                }
+                double sred = sum / (part.Length - 1);
+                reit[i] = $"{name}-{sred}";
+            }
+            var rit = reit.OrderByDescending(r => Convert.ToDouble(r.Split('-')[1]));
+            int kol = 1;
+            foreach (string r in rit)
+            {
+                Console.WriteLine($"{kol}.  {r.Split('-')[0]} -- {r.Split('-')[1]}");
+                kol++;
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Отличники");
+            foreach (string tab in mas)
+            {
+                var part = tab.Split('-');
+                var name = part[0];
+                int five = 0;
+                for (int j = 1;j < part.Length; j++)
+                {
+                    if (part[j] == "5")
+                    {
+                        five++;
+                    }
+                }
+                if (five == part.Length - 1)
+                {
+                    Console.WriteLine($"  --  {name}  --  ");
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine("Хорошисты:");
+            foreach (string tab in mas)
+            {
+                var part = tab.Split('-');
+                var name = part[0];
+                int four = 0;
+                int three = 0;
+                int two = 0;
+                for (int i = 1; i < part.Length; i++)
+                {
+                    if (part[i] == "4")
+                    {
+                        four++;
+                    }
+                    if (part[i] == "3")
+                    {
+                        three++;
+                    } 
+                    if (part[i] == "2")
+                    {
+                        two++;
+                    } 
+                }
+                if (four > 0 && three == 0 && two == 0)
+                {
+                    Console.WriteLine($"  --  {name}  --  ");
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine("Троечники:");
+            foreach (string tab in mas)
+            {
+                var part = tab.Split('-');
+                string name = part[0];
+                int three = 0;
+                int two = 0;
+                for (int i = 1; i < part.Length; i++)
+                {
+                    if (part[i] == "3")
+                    {
+                        three++;
+                    }
+                    if (part[i] == "2")
+                    {
+                        two++;
+                    }
+                }
+                if (three > 0 && two == 0)
+                {
+                    Console.WriteLine($"  --  {name}  --  ");
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Двоечники");
+            foreach (string tab in mas)
+            {
+                var part = tab.Split('-');
+                var name = part[0];
+                int two = 0;
+                for (int j = 1; j < part.Length; j++)
+                {
+                    if (part[j] == "2")
+                    {
+                        two++;
+                    }
+                }
+                if (two > 0)
+                {
+                    Console.WriteLine($"  --  {name}  --  ");
+                }
+            }
         }
     }
 }
